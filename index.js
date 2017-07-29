@@ -13,3 +13,5 @@ app.get('/contact', (req,res)=> res.render('contact'));
 app.get('/checkout', (req,res)=> res.render('checkout'));
 app.get('/single', (req,res)=> res.render('single'));
 app.get('/account', (req,res)=> res.render('account'));
+app.get('/register', (req,res)=> res.render('register'));
+app.get('/products', (req,res)=> res.render('products'));
