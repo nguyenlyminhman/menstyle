@@ -1641,7 +1641,7 @@ ul.star-footer li i {
     color: #4c4c4c;
     font-size: 1.1em;
     float: left;
-    width: 100%;
+    width: 150%;
     margin: 0.5em 0;
 }
 .available ul li select {
@@ -1649,7 +1649,7 @@ ul.star-footer li i {
     padding: 12px;
     border: none;
     background: #eeeeee;
-    width: 77%;
+    width: 45%;
     margin-left: 13%;
     cursor: pointer;
 }

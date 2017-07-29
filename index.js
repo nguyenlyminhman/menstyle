@@ -9,3 +9,7 @@ app.use('admin', express.static('public/admin'));
 app.listen(process.env.PORT || 3000, ()=>console.log('Server is running !!!'));
 
 app.get('/', (req,res)=> res.render('index'));
+app.get('/contact', (req,res)=> res.render('contact'));
+app.get('/checkout', (req,res)=> res.render('checkout'));
+app.get('/single', (req,res)=> res.render('single'));
+app.get('/account', (req,res)=> res.render('account'));
