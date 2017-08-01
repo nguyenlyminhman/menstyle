@@ -6,7 +6,7 @@
   "author": "nguyenlyminhman <nguyenlyminhman@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index"
+    "start": "node index.js"
   },
   "dependencies": {
     "body-parser": "^1.17.2",

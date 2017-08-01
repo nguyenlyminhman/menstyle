@@ -6,7 +6,7 @@ app.set('views', './views');
 app.use(express.static('public'));
 app.use('admin', express.static('public/admin'));
 
-app.listen(process.env.PORT || 3000, ()=>console.log('Server is running !!!'));
+
 
 app.get('/', require('./controller/showHomePage'));
 app.get('/contact', require('./controller/showContactPage'));
@@ -15,3 +15,6 @@ app.get('/single', (req,res)=> res.render('single'));
 app.get('/account', require('./controller/showAccountPage'));
 app.get('/register', require('./controller/showRegisterPage'));
 app.get('/products', (req,res)=> res.render('products'));
+
+
+app.listen(process.env.PORT || 3000, ()=>console.log('Server is running !!!'));
