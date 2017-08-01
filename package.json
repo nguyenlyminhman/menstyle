@@ -1,11 +1,12 @@
 {
-  "name": "menstyle",
+  "name": "menstyle_v1",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/nguyenlyminhman/menstyle.git",
   "author": "nguyenlyminhman <nguyenlyminhman@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "dependencies": {
