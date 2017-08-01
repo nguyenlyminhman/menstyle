@@ -6,8 +6,6 @@ app.set('views', './views');
 app.use(express.static('public'));
 app.use('admin', express.static('public/admin'));
 
-
-
 app.get('/', require('./controller/showHomePage'));
 app.get('/contact', require('./controller/showContactPage'));
 app.get('/checkout', (req,res)=> res.render('checkout'));
