@@ -2,7 +2,7 @@ const pg = require('pg');
 
 var config = {
     user: 'postgres', //env var: PGUSER
-    database: 'leeshop', //env var: PGDATABASE
+    database: 'menstyle', //env var: PGDATABASE
     password: 'sa', //env var: PGPASSWORD
     host: 'localhost', // Server hosting the postgres database
     port: 5432, //env var: PGPORT
@@ -25,7 +25,6 @@ function queryDB(sqlString, arrData) {
         });
     });
 }
-
 // queryDB('select * from "category"', [])
 // .then(data => console.log(data.rows))
 // .catch(err => console.log(err + ''));

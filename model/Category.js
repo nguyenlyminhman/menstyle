@@ -1,21 +1,15 @@
-const queryDB = require('../utils/Database');
+const queryDB = require('../utils/DatabaseConnection');
 
 class Category {
-    constructor(cateId, cateName, cateParent) {
-        this.cateId = cateId;
+    constructor(idCategory, cateName, cateParent) {
+        this.idCategory = idCategory;
         this.cateName = cateName;
         this.cateParent = cateParent
     }
 
     static getCategory() {
-        let sql = 'select * from "category" ORDER BY cateid ASC';
+        let sql = 'select * from public."category" ORDER BY idcategory ASC';
         return queryDB(sql, [])
-            .then(result => result.rows);
-    }
-
-    static getParentCategory(cateParent ) {
-        let sql = 'select * from "category" where cateparent=$1';
-        return queryDB(sql, [cateParent])
             .then(result => result.rows);
     }
 }
