@@ -1,3 +1,5 @@
+
+
 .memenu {
     margin: 5px 0 0 0;
     padding: 0;
@@ -143,7 +145,7 @@
 	z-index:1;
 }	
 .skyblue li>a,.skyblue>li.showhide span{
-	color:#000;
+	color: whitesmoke;
 }
 .skyblue>li:hover>a,.skyblue>li.active>a,.skyblue .dropdown li:hover>a{
 	color:#73B6E1;

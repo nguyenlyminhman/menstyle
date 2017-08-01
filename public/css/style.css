@@ -34,12 +34,12 @@ body a{
 /*--starts-logo--*/
 .logo {
     text-align: center;
-    padding: 25px 0 20px 0px;
     border-bottom: 1px solid #DEDEDE;
+    background-color: black;
 }
 .logo a h1 {
     font-size: 32px;
-    color: #000000;
+    color: #fff;
     margin: 0;
     font-family: 'Lora-Regular';
     text-transform: uppercase;
@@ -61,7 +61,7 @@ body a{
 	background: none;
 	outline: none;
 	-webkit-appearance: none;
-	color: rgba(0, 0, 0, 0.74);
+	color:  white;
 	font-size: 0.875em;
 	font-family: 'Lato', sans-serif;
 	position: relative;
@@ -362,7 +362,9 @@ span.simpleCart_total {
 	color: #fff;
 }
 .header-bottom {
-    padding: 18px 0px;
+    padding: 10px 0px;
+    background-color: black;
+    z-index: 1;
 }
 /*--end-bottom-header--*/
 /*--banner-Part-starts-Here --*/
@@ -646,7 +648,7 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
     vertical-align: middle;
 }
 .product-left:hover .product-bottom h4 i{
-	background: url(../images/cart-3.png) no-repeat;
+	background: url(../images/cart-2.png) no-repeat;
 }
 .product-bottom {
     text-align: left;
@@ -688,7 +690,7 @@ a.mask {
     padding: 12px 0px;
 }
 .product-left:hover .product-bottom h3{
-	color:#73B6E1;
+	color:black; /* #73B6E1 */
 	transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -696,7 +698,7 @@ a.mask {
     -ms-transition: 0.5s all ease;
 }
 .product-left:hover .product-bottom h4 span{
-	color:#73B6E1;
+	color:black; /* #73B6E1 */
 	transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -704,7 +706,7 @@ a.mask {
     -ms-transition: 0.5s all ease;
 }
 .product-left:hover .product-main{
-	border:1px solid #73B6E1;
+	 border:1px solid black; /* #73B6E1 */
 	transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -721,7 +723,7 @@ a.mask {
     left: 16px;
 }
 .srch span {
-    background: #73B6E1;
+    background: black; /*#73B6E1*/
     color: #fff;
     font-size: 15px;
     font-weight: 400;
@@ -977,9 +979,9 @@ a.mask {
 }
 .sky-form h4{
 	margin-top: 10px;
-	background: #ECECEC;
+	background: #242424; /*#ECECEC*/
 	padding: 15px 20px;
-	color: #000;
+	color: whitesmoke;
 	text-transform: uppercase;
 	margin-bottom: 0;
 	font-size:16px;
@@ -1308,7 +1310,7 @@ a.mask {
 }
 .breadcrumb {
     background: none;
-	margin: 0;
+	margin: 0px;
 }
 .breadcrumb > li {
     display: inline-block;
@@ -1684,7 +1686,7 @@ a.add-cart {
     display: inline-block;
 }
 a.add-cart:hover {
-	background: #73b6e1;
+	background: black; /*#73b6e1*/
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
@@ -1750,7 +1752,7 @@ ul {
 	text-decoration:none;
 }
 .menu_drop > li > a:hover, .menu > li > a.active {
-	background:#73b6e1;
+	background: #242424; /*#73b6e1*/
 	text-decoration:none;
 }
 .m_4{
@@ -2059,7 +2061,7 @@ span.cost {
 }
 @media (max-width:768px){
 .top-header-left{
-	width:50%;
+	width:33%;
 	float:left;
 }
 .cart-items h3 {
@@ -2113,6 +2115,7 @@ span.cost {
 }
 .logo a h1 {
     font-size: 22px;
+   
 }
 .memenu {
     margin: 0px 0 0 0 !important;
@@ -2755,6 +2758,7 @@ a.simpleCart_empty {
 }
 .logo {
     padding: 10px 0 8px 0px;
+     background-color: black;
 }
 .search-bar input[type="submit"] {
     width: 12px;
@@ -2797,6 +2801,7 @@ a.simpleCart_empty {
 .search-bar input[type="text"] {
     padding: 5px 20px 5px 8px;
     font-size: 11px;
+    
 }
 .banner, .banner1, .banner2 {
     min-height: 125px;
