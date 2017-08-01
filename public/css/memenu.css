@@ -16,7 +16,8 @@
     float: left;
     padding-right: 45px;
     color: #000;
-    font-size: 16px;
+	font-size: 16px;
+	text-transform: uppercase; 
     text-decoration: none;
     transition: color .4s ease-in-out;
     -moz-transition: color .4s ease-in-out;
@@ -52,6 +53,7 @@
 }
 .me-one ul li a:hover{
 	text-decoration:none;
+	
 	color:#73B6E1;
 }
 .me-one h4 {
