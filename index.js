@@ -6,10 +6,10 @@ app.set('views', './views');
 app.use(express.static('public'));
 app.use('admin', express.static('public/admin'));
 
-app.get('/', require('./controller/showHomePage'));
+app.get('/', (req,res)=> res.render('index'));
 app.get('/contact', require('./controller/showContactPage'));
-app.get('/checkout', (req,res)=> res.render('checkout'));
-app.get('/single', (req,res)=> res.render('single'));
+app.get('/checkout', require('./controller/showCheckOutPage'));
+app.get('/single', require('./controller/showSinglePage'));
 app.get('/account', require('./controller/showAccountPage'));
 app.get('/register', require('./controller/showRegisterPage'));
 app.get('/products', (req,res)=> res.render('products'));
