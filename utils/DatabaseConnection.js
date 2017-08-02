@@ -1,5 +1,4 @@
 const pg = require('pg');
-
 // var config = {
 //     user: 'postgres', //env var: PGUSER
 //     database: 'menstyle', //env var: PGDATABASE
@@ -15,10 +14,10 @@ const pg = require('pg');
 const URL = 'postgres://ynixgrygsibkhx:dc4fc74d9e74195ead59737bff32dfb5351b2c558bef07ba167d96f5b82da7ef@ec2-23-21-220-48.compute-1.amazonaws.com:5432/d15n4528dno5aj'
 function queryDB(sqlString, arrData) {
     return new Promise((resolve, reject) => {
-        pg.connect(URL,(err, client, done) => {
+        pg.connect(URL, (err, client, done) => {
             if (err) return reject(err);
+            done();
             client.query(sqlString, arrData, (errQuery, result) => {
-                done();
                 if (errQuery) return reject(errQuery);
                 resolve(result);
             });
@@ -29,4 +28,4 @@ function queryDB(sqlString, arrData) {
 // queryDB('select * from "category"', [])
 // .then(data => console.log(data.rows))
 // .catch(err => console.log(err + ''));
- module.exports = queryDB;
+module.exports = queryDB;
