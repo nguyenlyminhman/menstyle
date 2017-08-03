@@ -22,7 +22,7 @@ class Admin {
     }
 
     addNewAdmin() {
-        const sql = 'INSERT INTO public.admin(idadmin, fname, lname, email, password) values ("default", $1, $2, $3, $4)';
-        return queryDB(sql, [this.fname, this.lname, this.email, this.password]);
+        const sql = 'INSERT INTO public."admin" (idadmin, fname, lname, email, password) values ($1, $2, $3, $4, $5)';
+        return queryDB(sql, ['default', this.fname, this.lname, this.email, this.password]);
     }
 }
