@@ -1,27 +1,28 @@
 const queryDB = require('../utils/Database');
 
 class Admin {
-    constructor(id, email, password, fullname) {
-        this.id = id;
+    constructor(idadmin, fname, lname, email, password) {
+        this.idadmin = idadmin;
+        this.fname = fname;
+        this.lname = lname;
         this.email = email;
         this.password = password;
-        this.fullname = fullname;
     }
 
-    loginManager() { //eslint-disable-line
-        const sql = 'select * from public."manager" where email=$1 and password=$2';
+    loginAdmin() { //eslint-disable-line
+        const sql = 'select * from public."admin" where email=$1 and password=$2';
         return queryDB(sql, [this.email, this.password])
             .then(result => result.rows);
     }
 
-    getManagerInfoByEmail() {
-        const sql = 'select * from public."manager" where email=$1';
+    getAdminInfoByEmail() {
+        const sql = 'select * from public."admin" where email=$1';
         return queryDB(sql, [this.email])
             .then(result => result.rows);
     }
 
-    addNewManager() {
-        const sql = 'insert into public."manager" (email, password, fname, lname) values ($1, $2, $3, $4)';
-        return queryDB(sql, [this.email, this.password, this.fullname]);
+    addNewAdmin() {
+        const sql = 'INSERT INTO public.admin(idadmin, fname, lname, email, password) values ("default", $1, $2, $3, $4)';
+        return queryDB(sql, [this.fname, this.lname, this.email, this.password]);
     }
 }
