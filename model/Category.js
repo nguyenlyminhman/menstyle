@@ -8,7 +8,7 @@ class Category {
     }
 
     static getCategory() {
-        let sql = 'select * from public."category" ORDER BY idcategory ASC';
+        const sql = 'select * from public."category" ORDER BY idcategory ASC';
         return queryDB(sql, [])
             .then(result => result.rows);
     }
