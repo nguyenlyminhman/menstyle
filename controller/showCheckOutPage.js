@@ -1,8 +1,8 @@
-const menu = require('../model/Category');
+const Category = require('../model/Category');
 
 module.exports = async (req, res) => {
     try {
-        let mainMenu = await menu.getCategory();
+        let mainMenu = await Category.getCategory();
         // let subMenu = await menu.getParentCategory();
         res.render('checkout', { mainMenu })
     } catch (err) {

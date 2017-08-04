@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const Product = require('./model/Product')
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
@@ -13,9 +14,15 @@ app.get('/single', require('./controller/showSinglePage'));
 app.get('/account', require('./controller/showAccountPage'));
 app.get('/register', require('./controller/showRegisterPage'));
 app.get('/products', require('./controller/showProductsPage'));
-app.get('/products/category_type/:idcategory', (req, res) => {
-    const { idcategory } = req.params;
-    console.log(idcategory);
-});
+
+app.get('/products/category_type/:idcategory', require('./controller/showProductsPage'));
+
+
+// app.get('/products/category_type/:idcategory', (req, res) => {
+//     const { idcategory } = req.params;
+//     const pro = new Product(undefined, undefined, idcategory, undefined, undefined, undefined, undefined, undefined, undefined, undefined)
+//     pro.getProductByCategory()
+//         .then(a => console.log(a));
+// });
 
 app.listen(process.env.PORT || 3000, () => console.log('Server is running !!!'));

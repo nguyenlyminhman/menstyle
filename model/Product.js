@@ -1,12 +1,17 @@
-const queryDB = require('../utils/Database');
+const queryDB = require('../utils/DatabaseConnection');
 
 class Product {
-    constructor(proid, cateid, proname, proprice, prodetails) {
-        this.proid = proid;
-        this.cateid = cateid;
-        this.proname = proname;
-        this.proprice = proprice;
-        this.prodetails = prodetails;
+    constructor(idproduct, idproducer, idcategory, pro_code, pro_name, pro_price, pro_discount, pro_description, pro_new, pro_best_sale) {
+        this.idproduct = idproduct;
+        this.idproducer = idproducer;
+        this.idcategory = idcategory;
+        this.pro_code = pro_code;
+        this.pro_name = pro_name;
+        this.pro_price = pro_price;
+        this.pro_discount = pro_discount;
+        this.pro_description = pro_description;
+        this.pro_new = pro_new;
+        this.pro_best_sale = pro_best_sale;
     }
 
     getAllProduct() {
@@ -16,13 +21,13 @@ class Product {
     }
 
     getProductByCategory() {
-        let sql = 'SELECT * FROM public."product" where cateid = $1'
-        return queryDB(sql, [this.cateid])
+        let sql = 'SELECT * FROM public."product" where idcategory = $1'
+        return queryDB(sql, [this.idcategory])
             .then(result => result.rows);
     }
 
     getProductById() {
-        let sql = 'SELECT * FROM public."product" where proid = $1'
+        let sql = 'SELECT * FROM public."product" where idproduct = $1'
         return queryDB(sql, [this.proid])
             .then(result => result.rows);
     }
