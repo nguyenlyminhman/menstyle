@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
     try {
         let mainMenu = await getMenu.getCategory();
         let brandMenu = await getBrand.getProducer();
-        res.render('single', { mainMenu, brandMenu })
+        res.render('products', { mainMenu, brandMenu })
     } catch (err) {
         res.send('Navigation menu erorr :' + err);
     }

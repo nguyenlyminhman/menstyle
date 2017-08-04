@@ -12,7 +12,7 @@ app.get('/checkout', require('./controller/showCheckOutPage'));
 app.get('/single', require('./controller/showSinglePage'));
 app.get('/account', require('./controller/showAccountPage'));
 app.get('/register', require('./controller/showRegisterPage'));
-app.get('/products', (req, res) => res.render('products'));
+app.get('/products', require('./controller/showProductsPage'));
 app.get('/products/category_type/:idcategory', (req, res) => {
     const { idcategory } = req.params;
     console.log(idcategory);

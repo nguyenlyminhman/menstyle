@@ -8,5 +8,4 @@ module.exports = async (req, res) => {
     } catch (err) {
         res.send('Navigation menu erorr :' + err);
     }
-
 }

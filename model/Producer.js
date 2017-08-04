@@ -1,9 +1,9 @@
-const queryDB = require('../utils/Database');
+const queryDB = require('../utils/DatabaseConnection');
 
 class Producer {
-    constructor(idproducer, roducer_name) {
+    constructor(idproducer, producer_name) {
         this.idproducer = idproducer;
-        this.roducer_name = roducer_name;
+        this.roducer_name = producer_name;
     }
     static getProducer() {
         let sql = 'select * from public."producer" ORDER BY idproducer ASC';
@@ -11,4 +11,8 @@ class Producer {
             .then(result => result.rows);
     }
 }
-module.exports = Category;
+module.exports = Producer;
+
+// Producer.getProducer()
+// .then(a => console.log(a))
+// .catch(err=> console.log(err));
