@@ -3,69 +3,52 @@
 
 <head>
 	<title>Product | MenStyle Shopping</title>
-	<!--top-header-->
-	<% include header %>
-		<!--bottom-header-->
-		<!--start-breadcrumbs-->
-		<div class="breadcrumbs">
-			<div class="container">
-				<div class="breadcrumbs-main">
-					<ol class="breadcrumb">
-						<li><a href="/">Home</a></li>
-						<li class="active">New Products</li>
-					</ol>
+	<%# <base href="/">%>
+		<!--top-header-->
+		<% include header %>
+			<!--bottom-header-->
+			<!--start-breadcrumbs-->
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="breadcrumbs-main">
+						<ol class="breadcrumb">
+							<li><a href="/">Home</a></li>
+							<li class="active">New Products</li>
+						</ol>
+					</div>
 				</div>
 			</div>
-		</div>
-		<!--end-breadcrumbs-->
-		<!--prdt-starts-->
-		<div class="prdt">
-			<div class="container">
-				<div class="prdt-top">
-					<div class="col-md-9 prdt-left">
-						<div class="product-one">
-							<div class="col-md-4 product-left p-left">
-								<div class="product-main simpleCart_shelfItem">
-									<a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-1.png" alt="" /></a>
-									<div class="product-bottom">
-										<h3>Smart Watches</h3>
-										<p>Explore Now</p>
-										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
+			<!--end-breadcrumbs-->
+			<!--prdt-starts-->
+			<div class="prdt">
+				<div class="container">
+					<div class="prdt-top">
+						<div class="col-md-9 prdt-left">
+							<div class="product-one">
+								<% products.forEach((data)=>{%>
+									<div class="col-md-4 product-left p-left">
+										<div class="product-main simpleCart_shelfItem">
+											<a href="single" class="mask"><img class="img-responsive zoom-img" src="/images/p-1.png" alt="" /></a>
+											<div class="product-bottom">
+												<h3>
+													<%=data.pro_name %>
+												</h3>
+												<p>
+													<%=data.pro_code %>
+												</p>
+												<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ <%=data.pro_price %></span></h4>
+											</div>
+											<div class="srch srch1">
+												<span>View</span>
+											</div>
+										</div>
 									</div>
-									<div class="srch srch1">
-										<span>View</span>
-									</div>
-								</div>
+									<%})%>
+										<div class="clearfix"></div>
 							</div>
-							<div class="col-md-4 product-left p-left">
-								<div class="product-main simpleCart_shelfItem">
-									<a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-2.png" alt="" /></a>
-									<div class="product-bottom">
-										<h3>Smart Watches</h3>
-										<p>Explore Now</p>
-										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
-									</div>
-									<div class="srch srch1">
-										<span>View</span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 product-left p-left">
-								<div class="product-main simpleCart_shelfItem">
-									<a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-3.png" alt="" /></a>
-									<div class="product-bottom">
-										<h3>Smart Watches</h3>
-										<p>Explore Now</p>
-										<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
-									</div>
-									<div class="srch srch1">
-										<span>View</span>
-									</div>
-								</div>
-							</div>
-							<div class="clearfix"></div>
 						</div>
-						<div class="product-one">
+
+						<!-- <div class="product-one">
 							<div class="col-md-4 product-left p-left">
 								<div class="product-main simpleCart_shelfItem">
 									<a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-4.png" alt="" /></a>
@@ -106,13 +89,13 @@
 								</div>
 							</div>
 							<div class="clearfix"></div>
-						</div>
+						</div> -->
 					</div>
 					<% include rightmenu %>
-					<div class="clearfix"></div>
+						<div class="clearfix"></div>
 				</div>
 			</div>
-		</div>
-		<!--product-end-->
-		<!--information-starts-->
-		<% include footer %>>
+			</div>
+			<!--product-end-->
+			<!--information-starts-->
+			<% include footer %>>
