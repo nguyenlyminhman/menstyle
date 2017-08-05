@@ -119,10 +119,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-9 header-left">
 						<div class="top-nav">
 							<ul class="memenu skyblue">
-								<li class="active"><a href="/">Home</a></li>
+								<!--active-->
+								<li class="grid"><a href="/">Home</a></li>
 								<%mainMenu.forEach((data)=>{%>
 									<li class="grid">
-										<a href="/products/category_type/<%=data.idcategory%>">
+										<a href="/category/<%=data.cate_seolink%>/<%=data.idcategory%>">
 											<%=data.cate_name%>
 										</a>
 									</li>
