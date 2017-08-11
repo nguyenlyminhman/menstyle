@@ -8,27 +8,28 @@
 		<% include header %>
 			<!--bottom-header-->
 			<!--start-breadcrumbs-->
-			<div class="breadcrumbs">
+			<!-- <div class="breadcrumbs">
 				<div class="container">
 					<div class="breadcrumbs-main">
 						<ol class="breadcrumb">
 							<li><a href="/">Home</a></li>
-							<li class="active">New Products</li>
+							<li class="active">{}</li>
 						</ol>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!--end-breadcrumbs-->
 			<!--prdt-starts-->
 			<div class="prdt">
 				<div class="container">
 					<div class="prdt-top">
 						<div class="col-md-9 prdt-left">
+
 							<div class="product-one">
-								<% products.forEach((data)=>{%>
+								<% products.forEach((data)=>{ %>
 									<div class="col-md-4 product-left p-left">
 										<div class="product-main simpleCart_shelfItem">
-											<a href="<%=data.idcategory %>/details/<%=data.idproduct %>" class="mask"><img class="img-responsive zoom-img" src="/images/p-1.png" alt="" /></a>
+											<a href="/product-details/<%=data.idproduct %>" class="mask"><img class="img-responsive zoom-img" src="/images/p-1.png" alt="" /></a>
 											<div class="product-bottom">
 												<h3>
 													<%=data.pro_name %>
@@ -39,13 +40,14 @@
 												<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ <%=data.pro_price %></span></h4>
 											</div>
 											<div class="srch srch1">
-												<span>View</span>
+												<span>Add To Card</span>
 											</div>
 										</div>
 									</div>
 									<%})%>
 										<div class="clearfix"></div>
 							</div>
+
 						</div>
 
 						<!-- <div class="product-one">

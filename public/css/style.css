@@ -4,6 +4,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 thêm thuộc tính margin-top: 30px; dòng 620 cho trong products
+Sua dong 625 : sua lai border 
 --*/
 body{
 	background:#fff;
@@ -618,11 +619,11 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
 /*--product-starts--*/
 .product-left {
     text-align: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .product-main {
     padding: 1em 0px 2.7em 0px;
-    border:1px solid #ECEAEA;
+     border:1px solid white;/* #ECEAEA */
 }
 .product {
     padding: 3em 0px 6em 0px;
@@ -720,7 +721,7 @@ a.mask {
 .srch {
     display: none;
     position: absolute;
-    top: 18%;
+    top: 15%;
     left: 16px;
 }
 .srch span {
@@ -953,7 +954,8 @@ a.mask {
 .sky-form .label {
 	display: block;
 	margin-bottom: 6px;
-	line-height: 19px;
+    line-height: 19px;
+    
 }
 .w_sidebar h3{
 	padding:0 20px 10px;
@@ -992,13 +994,15 @@ a.mask {
 	margin-bottom: 20px;
 }
 .sky-form .label {
+    
 	display: block;
 	margin-bottom: 6px;
 	line-height: 19px;
 }
 .sky-form .label.col {
 	margin: 0;
-	padding-top: 10px;
+    padding-top: 10px;
+    
 }
 .sky-form .input,
 .sky-form .select,
@@ -1012,6 +1016,7 @@ a.mask {
 }
 /* selects */
 .sky-form .select i {
+    
 	position: absolute;
 	top: 14px;
 	right: 14px;
@@ -1076,14 +1081,17 @@ a.mask {
 	outline: none;
 	border-width: 2px;
 	border-style: solid;
-	background: #fff;
+    background: #fff;
+    
 }
 .sky-form .radio i {
-	border-radius: 50%;
+    border-radius: 50%;
+    
 }
 .sky-form .radio input + i:after,
 .sky-form .checkbox input + i:after {
-	position: absolute;
+    position: absolute;
+    
 	opacity: 0;
 	transition: opacity 0.1s;
 	-o-transition: opacity 0.1s;
@@ -1146,6 +1154,7 @@ a.mask {
 .sky-form .toggle i,
 .sky-form .icon-append,
 .sky-form .icon-prepend {
+        
 	border-color: #e5e5e5;
 	transition: border-color 0.3s;
 	-o-transition: border-color 0.3s;
@@ -1433,7 +1442,7 @@ a.mask {
 .account-bottom {
     margin-top: 2.2em;
 }
-.account-left input[type="text"],.account-left input[type="password"] {
+.account-left input[type="email"],.account-left input[type="text"],.account-left input[type="password"] {
     width: 90%;
     margin: 0px;
     color: #000;
@@ -1863,6 +1872,7 @@ h3.ghj {
     font-size: 0.85em;
     color: #999;
     margin: 0;
+
 }
 .account-left p{
 	margin: 1.2em 0 2.2em 0;
@@ -3095,6 +3105,7 @@ ul.tag-men {
     font-size: 11px;
 }
 .sky-form .radio, .sky-form .checkbox {
+    
     font-size: 12px;
 }
 }

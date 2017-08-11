@@ -11,5 +11,6 @@ router.get('/register', require('./showRegisterPage'));
 router.get('/products', require('./showProductsPage'));
 
 router.get('/category/:cate_seolink/:idcategory', require('./showProductsPage'));
+router.get('/product-details/:idproduct', require('./showSinglePage'));
 
 module.exports = router;

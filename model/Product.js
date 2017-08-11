@@ -28,7 +28,13 @@ class Product {
 
     getProductById() {
         let sql = 'SELECT * FROM public."product" where idproduct = $1'
-        return queryDB(sql, [this.proid])
+        return queryDB(sql, [this.idproduct])
+            .then(result => result.rows);
+    }
+
+    getBestSaleProduct() {
+        let sql = 'SELECT * FROM public."product" where pro_best_sale = true'
+        return queryDB(sql, [])
             .then(result => result.rows);
     }
 
@@ -45,11 +51,11 @@ class Product {
 
 module.exports = Product;
 
-// const pro = new Product(1, 1, 'short jean', 20, 'for girls');
+//let product = new Product(30, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined, undefined);
 // // pro.insertNewProduct()
 // // .then(() => console.log('ok man'))
 // // .catch(err=> console.log(err));
 
-// pro.getProductById(2)
+// product.getProductById()
 // .then(s => console.log(s))
 // .catch(w => console.log('not found' + w));
