@@ -3,8 +3,9 @@ Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
-thêm thuộc tính margin-top: 30px; dòng 620 cho trong products
-Sua dong 625 : sua lai border 
+
+
+Chinh sua button add to cart o dong 1676
 --*/
 body{
 	background:#fff;
@@ -36,12 +37,12 @@ body a{
 /*--starts-logo--*/
 .logo {
     text-align: center;
+    padding: 10px 0 10px 0px;
     border-bottom: 1px solid #DEDEDE;
-    background-color: black;
 }
 .logo a h1 {
-    font-size: 32px;
-    color: #fff;
+    font-size: 28px;
+    color: black;
     margin: 0;
     font-family: 'Lora-Regular';
     text-transform: uppercase;
@@ -59,11 +60,11 @@ body a{
 .search-bar input[type="text"] {
 	width: 100%;
 	padding: 8px 45px 8px 8px;
-	border: 1px solid #F5F5F5;
+	border: 1px solid #000;
 	background: none;
 	outline: none;
 	-webkit-appearance: none;
-	color:  white;
+	color: rgba(0, 0, 0, 0.74);
 	font-size: 0.875em;
 	font-family: 'Lato', sans-serif;
 	position: relative;
@@ -364,9 +365,7 @@ span.simpleCart_total {
 	color: #fff;
 }
 .header-bottom {
-    padding: 10px 0px;
-    background-color: black;
-    z-index: 1;
+    padding: 18px 0px;
 }
 /*--end-bottom-header--*/
 /*--banner-Part-starts-Here --*/
@@ -619,11 +618,11 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
 /*--product-starts--*/
 .product-left {
     text-align: center;
-    /* margin-top: 30px; */
+
 }
 .product-main {
     padding: 1em 0px 2.7em 0px;
-     border:1px solid white;/* #ECEAEA */
+    border:1px solid #ECEAEA;
 }
 .product {
     padding: 3em 0px 6em 0px;
@@ -650,7 +649,7 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
     vertical-align: middle;
 }
 .product-left:hover .product-bottom h4 i{
-	background: url(../images/cart-2.png) no-repeat;
+	background: url(../images/cart-3.png) no-repeat;
 }
 .product-bottom {
     text-align: left;
@@ -692,7 +691,7 @@ a.mask {
     padding: 12px 0px;
 }
 .product-left:hover .product-bottom h3{
-	color:black; /* #73B6E1 */
+	color:#73B6E1;
 	transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -700,7 +699,7 @@ a.mask {
     -ms-transition: 0.5s all ease;
 }
 .product-left:hover .product-bottom h4 span{
-	color:black; /* #73B6E1 */
+	color:#73B6E1;
 	transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -708,7 +707,7 @@ a.mask {
     -ms-transition: 0.5s all ease;
 }
 .product-left:hover .product-main{
-	 border:1px solid black; /* #73B6E1 */
+	border:1px solid #73B6E1;
 	transition: 0.5s all ease;
     -webkit-transition: 0.5s all ease;
     -moz-transition: 0.5s all ease;
@@ -721,11 +720,11 @@ a.mask {
 .srch {
     display: none;
     position: absolute;
-    top: 15%;
+    top: 18%;
     left: 16px;
 }
 .srch span {
-    background: black; /*#73B6E1*/
+    background: #73B6E1;
     color: #fff;
     font-size: 15px;
     font-weight: 400;
@@ -954,8 +953,7 @@ a.mask {
 .sky-form .label {
 	display: block;
 	margin-bottom: 6px;
-    line-height: 19px;
-    
+	line-height: 19px;
 }
 .w_sidebar h3{
 	padding:0 20px 10px;
@@ -982,9 +980,9 @@ a.mask {
 }
 .sky-form h4{
 	margin-top: 10px;
-	background: #242424; /*#ECECEC*/
+	background: #ECECEC;
 	padding: 15px 20px;
-	color: whitesmoke;
+	color: #000;
 	text-transform: uppercase;
 	margin-bottom: 0;
 	font-size:16px;
@@ -994,15 +992,13 @@ a.mask {
 	margin-bottom: 20px;
 }
 .sky-form .label {
-    
 	display: block;
 	margin-bottom: 6px;
 	line-height: 19px;
 }
 .sky-form .label.col {
 	margin: 0;
-    padding-top: 10px;
-    
+	padding-top: 10px;
 }
 .sky-form .input,
 .sky-form .select,
@@ -1016,7 +1012,6 @@ a.mask {
 }
 /* selects */
 .sky-form .select i {
-    
 	position: absolute;
 	top: 14px;
 	right: 14px;
@@ -1081,17 +1076,14 @@ a.mask {
 	outline: none;
 	border-width: 2px;
 	border-style: solid;
-    background: #fff;
-    
+	background: #fff;
 }
 .sky-form .radio i {
-    border-radius: 50%;
-    
+	border-radius: 50%;
 }
 .sky-form .radio input + i:after,
 .sky-form .checkbox input + i:after {
-    position: absolute;
-    
+	position: absolute;
 	opacity: 0;
 	transition: opacity 0.1s;
 	-o-transition: opacity 0.1s;
@@ -1154,7 +1146,6 @@ a.mask {
 .sky-form .toggle i,
 .sky-form .icon-append,
 .sky-form .icon-prepend {
-        
 	border-color: #e5e5e5;
 	transition: border-color 0.3s;
 	-o-transition: border-color 0.3s;
@@ -1320,7 +1311,7 @@ a.mask {
 }
 .breadcrumb {
     background: none;
-	margin: 0px;
+	margin: 0;
 }
 .breadcrumb > li {
     display: inline-block;
@@ -1380,8 +1371,8 @@ a.mask {
 	outline: none;
 }
 .submit-btn input[type=submit]:hover{
-	background: #000;
-	border: 1px solid #000;
+	background: #73B6E1;
+	border: 1px solid #73B6E1;
 	color:#fff;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -1390,7 +1381,7 @@ a.mask {
 	-o-transition: 0.5s all;
 }
 .address h5 {
-    color: black; /*#73B6E1*/
+    color: #73B6E1;
     font-size: 1.5em;
     font-weight: 700;
     margin: 0;
@@ -1429,7 +1420,7 @@ a.mask {
 }
 .account-left h3 {
     font-size: 1.7em;
-    color: black ; /*#73b6e1*/
+    color: #73b6e1;
     margin: 0 0 0 0;
     font-family: 'BreeSerif-Regular';
 }
@@ -1442,7 +1433,7 @@ a.mask {
 .account-bottom {
     margin-top: 2.2em;
 }
-.account-left input[type="email"],.account-left input[type="text"],.account-left input[type="password"] {
+.account-left input[type="text"],.account-left input[type="password"] {
     width: 90%;
     margin: 0px;
     color: #000;
@@ -1468,29 +1459,27 @@ a.mask {
 	margin-right: 20px;
 }
 .address input[type="submit"] {
-    /*background: black; #73B6E1*/
+    background: none;
     color: #000;
-	padding: 9px 42px;
-	font-size: 15px;
-	cursor: pointer;
-	margin: 20px 0 0 0px;
-	border: 1px solid #000;
-	background: none;
+    font-size: 15px;
+    padding: 0.5em 1.2em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    border: solid 1px #000;
+    outline: none;
 	font-family: 'Lato-Regular';
-	outline: none;
-
-
 }
 .address input[type="submit"]:hover {
-    background: #000;
-	border: 1px solid #000;
-	color:#fff;
-	transition: 0.5s all;
-	-webkit-transition: 0.5s all;
-	-moz-transition: 0.5s all;
-	-ms-transition: 0.5s all;
-	-o-transition: 0.5s all;
-
+    background: #73B6E1;
+    border: solid 1px #73B6E1;
+    color: #fff;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
 }
 /*--account-end--*/
 /*--start-checkout--*/
@@ -1656,7 +1645,7 @@ ul.star-footer li i {
     color: #4c4c4c;
     font-size: 1.1em;
     float: left;
-    width: 150%;
+    width: 100%;
     margin: 0.5em 0;
 }
 .available ul li select {
@@ -1664,7 +1653,7 @@ ul.star-footer li i {
     padding: 12px;
     border: none;
     background: #eeeeee;
-    width: 45%;
+    width: 77%;
     margin-left: 13%;
     cursor: pointer;
 }
@@ -1701,8 +1690,8 @@ a.add-cart {
 	outline: none;
 }
 a.add-cart:hover {
-	background: #000;
-	border: 1px solid #000;
+	background: #73b6e1;
+	border: 1px solid #73b6e1;
 	color:#fff;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -1770,7 +1759,7 @@ ul {
 	text-decoration:none;
 }
 .menu_drop > li > a:hover, .menu > li > a.active {
-	background: #242424; /*#73b6e1*/
+	background:#73b6e1;
 	text-decoration:none;
 }
 .m_4{
@@ -1872,7 +1861,6 @@ h3.ghj {
     font-size: 0.85em;
     color: #999;
     margin: 0;
-
 }
 .account-left p{
 	margin: 1.2em 0 2.2em 0;
@@ -1881,10 +1869,10 @@ h3.ghj {
 	color:#999;
 }
 .account-right a{
-	/*font-size:13px;
+	/* font-size:13px;
 	padding:10px 12px;
-	color:black;
-    background: black;  #73B6E1 */
+	color:#fff;
+    background:#73B6E1; */
     color: #000;
 	padding: 9px 42px;
 	font-size: 15px;
@@ -1894,21 +1882,19 @@ h3.ghj {
 	background: none;
 	font-family: 'Lato-Regular';
 	outline: none;
-
 }
 .account-right a:hover{
 	/* text-decoration:none;
     background:#000; */
     text-decoration:none;
-    background: #000;
-	border: 1px solid #000;
+    background: #73B6E1;
+	border: 1px solid #73B6E1;
 	color:#fff;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
 	-ms-transition: 0.5s all;
 	-o-transition: 0.5s all;
-
 }
 .register{
 	padding:6em 0px;
@@ -1980,7 +1966,7 @@ h3.ghj {
     padding: 4em 0px;
 }
 .logo a h1 {
-    font-size: 28px;
+    font-size: 20px;
 }
 .logo {
     padding: 19px 0 12px 0px;
@@ -2100,7 +2086,7 @@ span.cost {
 }
 @media (max-width:768px){
 .top-header-left{
-	width:33%;
+	width:50%;
 	float:left;
 }
 .cart-items h3 {
@@ -2154,7 +2140,6 @@ span.cost {
 }
 .logo a h1 {
     font-size: 22px;
-   
 }
 .memenu {
     margin: 0px 0 0 0 !important;
@@ -2417,7 +2402,7 @@ a.simpleCart_empty {
     margin: 3px 0 0 5px;
 }
 .logo a h1 {
-    font-size: 21px;
+    font-size: 20px;
 }
 .search-bar input[type="submit"] {
     background-size: 100%;
@@ -2662,7 +2647,7 @@ a.simpleCart_empty {
     padding: 4px 0px;
 }
 .logo a h1 {
-    font-size: 18px;
+    font-size: 20px;
 }
 .memenu>li.showhide span.title {
     margin: 11px 0 0 20px !important; 
@@ -2797,7 +2782,6 @@ a.simpleCart_empty {
 }
 .logo {
     padding: 10px 0 8px 0px;
-     background-color: black;
 }
 .search-bar input[type="submit"] {
     width: 12px;
@@ -2840,7 +2824,6 @@ a.simpleCart_empty {
 .search-bar input[type="text"] {
     padding: 5px 20px 5px 8px;
     font-size: 11px;
-    
 }
 .banner, .banner1, .banner2 {
     min-height: 125px;
@@ -3105,7 +3088,6 @@ ul.tag-men {
     font-size: 11px;
 }
 .sky-form .radio, .sky-form .checkbox {
-    
     font-size: 12px;
 }
 }
